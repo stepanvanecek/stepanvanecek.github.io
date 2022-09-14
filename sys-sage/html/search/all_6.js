@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['memory_0',['Memory',['../class_memory.html',1,'Memory'],['../class_memory.html#a585d7bb6fc6f2237bcebf94a86b7dd99',1,'Memory::Memory()']]],
-  ['my_5fcore_5fattributes_1',['My_core_attributes',['../class_my__core__attributes.html',1,'']]]
+  ['id_0',['id',['../class_component.html#a7b51904172e22f13a182eb16b7de4aaf',1,'Component']]],
+  ['insertchild_1',['InsertChild',['../class_component.html#a8506f89d8714c3fe2a3e435b97b5544f',1,'Component']]],
+  ['installation_20guide_2',['Installation Guide',['../md__installation__guide.html',1,'']]]
 ];

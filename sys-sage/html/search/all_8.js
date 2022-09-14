@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['parent_0',['parent',['../class_component.html#add189dc18ca4dd121d7dede5a0dbeab8',1,'Component']]],
-  ['print_1',['Print',['../class_data_path.html#a19e2e241cdb1c3eefc79588f37f688e3',1,'DataPath']]],
-  ['printalldatapathsinsubtree_2',['PrintAllDataPathsInSubtree',['../class_component.html#a6b7a769dc19d12ece34053a9b5294cc9',1,'Component']]],
-  ['printsubtree_3',['PrintSubtree',['../class_component.html#ad1cc172d9c737b978ad30f64196e96f9',1,'Component::PrintSubtree()'],['../class_component.html#a7db6813ba9bf728892e8c4b571e3169b',1,'Component::PrintSubtree(int level)']]]
+  ['name_0',['name',['../class_component.html#a3f51bb245c415a384cd29c60f7b25ba2',1,'Component']]],
+  ['node_1',['Node',['../class_node.html',1,'Node'],['../class_node.html#ad7a34779cad45d997bfd6d3d8043c75f',1,'Node::Node()'],['../class_node.html#a69dbe8776549758f7a15e3b5edf3abb4',1,'Node::Node(int _id)']]],
+  ['numa_2',['Numa',['../class_numa.html',1,'Numa'],['../class_numa.html#ad7327e1b6f30b1111d7994bd29ebfbb7',1,'Numa::Numa()'],['../class_numa.html#a18d2e4f47455ea983cf569a9cf32f2e3',1,'Numa::Numa(int _id)'],['../class_numa.html#af0a006e43f302520cbe2041106974407',1,'Numa::Numa(int _id, int _size)']]],
+  ['numa_5fregion_3',['numa_region',['../structnuma__region.html',1,'']]]
 ];
