@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['xmlrelevantnames_0',['xmlRelevantNames',['../hwloc_8hpp.html#a772833e68b74c7f69d366af1f3aead31',1,'hwloc.cpp']]],
-  ['xmlrelevantobjecttypes_1',['xmlRelevantObjectTypes',['../hwloc_8hpp.html#aa352aba729acb1d29743e0df27985f8a',1,'hwloc.cpp']]]
+  ['removechild_0',['RemoveChild',['../class_component.html#a753b5c04b6fc79ff6ebcd89593b701f9',1,'Component']]],
+  ['representation_1',['Internal Representation',['../md__concept.html#autotoc_md11',1,'']]],
+  ['resources_2',['Resources',['../index.html#autotoc_md21',1,'']]]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['setparent_0',['SetParent',['../class_component.html#a18d4b870ab8f711d030d4a7f1291c42b',1,'Component']]],
-  ['storage_1',['Storage',['../class_storage.html',1,'Storage'],['../class_storage.html#a80ef6af5e4c9fd4424ae16e808d05291',1,'Storage::Storage()']]],
-  ['subdivision_2',['Subdivision',['../class_subdivision.html',1,'Subdivision'],['../class_subdivision.html#ac51db3c00b0e4f7543c34859ad846871',1,'Subdivision::Subdivision()'],['../class_subdivision.html#a78938844f2e15e5ddd486b4ab8739384',1,'Subdivision::Subdivision(int _id)'],['../class_subdivision.html#a8202186cb410858163384c8eced1eac4',1,'Subdivision::Subdivision(int _id, string _name, int _componentType)']]],
-  ['sys_2dsage_20documentation_3',['sys-sage Documentation',['../index.html',1,'']]]
+  ['of_20attributes_20to_20handle_0',['Types of Attributes to Handle',['../md__concept.html#autotoc_md6',1,'']]],
+  ['of_20sys_20sage_1',['Design of sys-sage',['../md__concept.html#autotoc_md8',1,'']]],
+  ['of_20usage_2',['Possible Areas of Usage',['../md__concept.html#autotoc_md4',1,'']]]
 ];

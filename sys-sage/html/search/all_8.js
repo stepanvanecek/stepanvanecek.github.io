@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['name_0',['name',['../class_component.html#a3f51bb245c415a384cd29c60f7b25ba2',1,'Component']]],
-  ['node_1',['Node',['../class_node.html',1,'Node'],['../class_node.html#ad7a34779cad45d997bfd6d3d8043c75f',1,'Node::Node()'],['../class_node.html#a69dbe8776549758f7a15e3b5edf3abb4',1,'Node::Node(int _id)']]],
-  ['numa_2',['Numa',['../class_numa.html',1,'Numa'],['../class_numa.html#ad7327e1b6f30b1111d7994bd29ebfbb7',1,'Numa::Numa()'],['../class_numa.html#a18d2e4f47455ea983cf569a9cf32f2e3',1,'Numa::Numa(int _id)'],['../class_numa.html#af0a006e43f302520cbe2041106974407',1,'Numa::Numa(int _id, int _size)']]],
-  ['numa_5fregion_3',['numa_region',['../structnuma__region.html',1,'']]]
+  ['main_0',['main',['../hwloc-output_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'hwloc-output.cpp']]],
+  ['memory_1',['Memory',['../class_memory.html',1,'Memory'],['../class_memory.html#a585d7bb6fc6f2237bcebf94a86b7dd99',1,'Memory::Memory()'],['../class_memory.html#a358489cbc17e88eea4dd6a3b2a212cec',1,'Memory::Memory(Component *parent, int id=0, string _name=&quot;Memory&quot;, long long _size=-1)']]],
+  ['mt4g_20gpu_20topology_2',['mt4g (GPU topology)',['../md__data___parsers.html#autotoc_md17',1,'']]],
+  ['mt4g_2ehpp_3',['mt4g.hpp',['../mt4g_8hpp.html',1,'']]],
+  ['my_5fcore_5fattributes_4',['My_core_attributes',['../class_my__core__attributes.html',1,'']]]
 ];
