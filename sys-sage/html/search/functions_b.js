@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['thread_0',['Thread',['../class_thread.html#ad39d563090e36acf578a517b169a0b82',1,'Thread::Thread(int _id=0, string _name=&quot;Thread&quot;)'],['../class_thread.html#a876983fb36ba270d16abc231f69ec08c',1,'Thread::Thread(Component *parent, int _id=0, string _name=&quot;Thread&quot;)']]],
-  ['topology_1',['Topology',['../class_topology.html#aa3336e10118cd76ab4b4c2ebc5062a9a',1,'Topology']]]
+  ['updatel3catcorecos_0',['UpdateL3CATCoreCOS',['../class_node.html#aded78798d6becb32d6f75f82e799a31a',1,'Node']]],
+  ['updatemigsettings_1',['UpdateMIGSettings',['../class_chip.html#a2f4d4d27a16c7581b357243e6b22d2a0',1,'Chip']]],
+  ['updatesource_2',['UpdateSource',['../class_data_path.html#a41cc34869ce860f65614965ed8edec4a',1,'DataPath']]],
+  ['updatetarget_3',['UpdateTarget',['../class_data_path.html#a85eca5b9e77d70049a2694ad3eda8b6d',1,'DataPath']]]
 ];

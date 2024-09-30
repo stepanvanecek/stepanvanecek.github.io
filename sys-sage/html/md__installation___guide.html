@@ -89,7 +89,7 @@ From the sources</h1>
 <p>Installation with CMAKE: </p><div class="fragment"><div class="line">mkdir build &amp;&amp; cd build</div>
 <div class="line">cmake ..</div>
 <div class="line"># build options:</div>
-<div class="line"># -DCAT_AWARE=ON            - builds with Intel CAT functionality. For that, Intel-specific pqos header/library are necessary.</div>
+<div class="line"># -DINTEL_PQOS=ON            - builds with Intel CAT functionality. For that, Intel-specific pqos header/library are necessary.</div>
 <div class="line"># -DBUILD_DATA_SOURCES=ON   - builds data sources from folder &#39;data-sources&#39;. If turned on, includes Linux-specific libraries and hwloc. Data sources are used to collecting HW-related information, so it only makes sense to compile that on the system where the topology information is queried.</div>
 <div class="line"># -DCMAKE_INSTALL_PREFIX=../inst-dir    - to install locally into the git repo folder</div>
 <div class="line">make all install</div>

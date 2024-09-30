@@ -12,9 +12,9 @@ var searchData=
   ['concept_9',['Concept',['../md__concept.html',1,'']]],
   ['core_10',['Core',['../class_core.html',1,'Core'],['../class_core.html#af310f28f0bca715a22fdcb1c40e54db9',1,'Core::Core(int _id=0, string _name=&quot;Core&quot;)'],['../class_core.html#a85a3de997a465274f5695969cf357217',1,'Core::Core(Component *parent, int _id=0, string _name=&quot;Core&quot;)']]],
   ['count_11',['count',['../class_component.html#a9cc084b0920e318e25b82c78a9b6c9a3',1,'Component']]],
-  ['countallsubcomponents_12',['CountAllSubcomponents',['../class_component.html#afc7f01be2115c093132a4e2d90f98e45',1,'Component']]],
-  ['countallsubcomponentsbytype_13',['CountAllSubcomponentsByType',['../class_component.html#aeb92027cb1a15c462e5d4b87a65dcbfd',1,'Component']]],
-  ['cpu_20topology_14',['hwloc (CPU topology)',['../md__data___parsers.html#autotoc_md16',1,'']]],
-  ['createxmlsubtree_15',['CreateXmlSubtree',['../class_component.html#a2e7387f56a6aa133bc94f0aebebd0cc0',1,'Component::CreateXmlSubtree()'],['../class_memory.html#a971b4a098c93ef918d6df00d1c46b2c9',1,'Memory::CreateXmlSubtree()'],['../class_storage.html#a05cba1762a446fd391b4861709659326',1,'Storage::CreateXmlSubtree()'],['../class_chip.html#a02f27704ef6fb64f9711a3e8c5cb6f3c',1,'Chip::CreateXmlSubtree()'],['../class_cache.html#a3196866277eff478f567992ded097834',1,'Cache::CreateXmlSubtree()'],['../class_subdivision.html#ad36acb67b490f9bb33d4f38612cd430b',1,'Subdivision::CreateXmlSubtree()'],['../class_numa.html#abd0fd7d48f8c9dd1600b5d2c9f83b18a',1,'Numa::CreateXmlSubtree()']]],
+  ['countallchildrenbytype_12',['CountAllChildrenByType',['../class_component.html#ae217308565f3fb267a055683ca223f1f',1,'Component']]],
+  ['countallsubcomponents_13',['CountAllSubcomponents',['../class_component.html#afc7f01be2115c093132a4e2d90f98e45',1,'Component']]],
+  ['countallsubcomponentsbytype_14',['CountAllSubcomponentsByType',['../class_component.html#aeb92027cb1a15c462e5d4b87a65dcbfd',1,'Component']]],
+  ['cpu_20topology_15',['hwloc (CPU topology)',['../md__data___parsers.html#autotoc_md16',1,'']]],
   ['csvreader_16',['CSVReader',['../class_c_s_v_reader.html',1,'']]]
 ];

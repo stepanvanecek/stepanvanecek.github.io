@@ -7,7 +7,7 @@ var searchData=
   ['defining_20the_20functionality_4',['Defining the functionality',['../md__concept.html#autotoc_md1',1,'']]],
   ['delete_5',['Delete',['../class_component.html#ad76450a472dd9b88ac381fe3d17f2923',1,'Component']]],
   ['deletealldatapaths_6',['DeleteAllDataPaths',['../class_component.html#aa6e8f7352ea4fac3a89285f10db36d34',1,'Component']]],
-  ['deletedatapath_7',['DeleteDataPath',['../class_data_path.html#a31d121152bec5ed3678c39b50becff99',1,'DataPath']]],
+  ['deletedatapath_7',['DeleteDataPath',['../class_component.html#a3981ff9e6b3f65a2968fedd85fab2905',1,'Component::DeleteDataPath()'],['../class_data_path.html#a31d121152bec5ed3678c39b50becff99',1,'DataPath::DeleteDataPath()']]],
   ['deletesubtree_8',['DeleteSubtree',['../class_component.html#a82347ac087e660ff48d9173d1add4c37',1,'Component']]],
   ['depth_9',['depth',['../class_component.html#a1f32d0806b8c40635e9d4224ed23dede',1,'Component']]],
   ['design_20of_20sys_20sage_10',['Design of sys-sage',['../md__concept.html#autotoc_md8',1,'']]],
