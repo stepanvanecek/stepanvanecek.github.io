@@ -92,7 +92,7 @@ Why use sys-sage?</h2>
 <li><b>Extensible:</b> Add new 3rd-party data sources or APIs, or attach custom metadata, without changing the core.</li>
 <li><b>Easy traversal and queries:</b> Find all GPUs, all data paths, or all components with a certain property.</li>
 <li><b>Serialization:</b> Import/export your system topology (with all metadata) to XML, with hooks for custom attributes &ndash; and recreate the exact system representation, including all internal information, on a different machine or at a different time.</li>
-<li><b>Python API:</b> (Experimental) Use sys-sage from Python for rapid prototyping, data science, or integration with other tools.</li>
+<li><b>Python API:</b> Use sys-sage from Python for rapid prototyping, data science, or integration with other tools.</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md23"></a>
 Where sys-sage Shines</h2>
@@ -108,6 +108,7 @@ Documentation overview</h1>
 <li><a class="el" href="md__concept.html">Detailed Concepts and Architecture</a></li>
 <li><a class="el" href="md__installation___guide.html">Installation Guide</a></li>
 <li><a class="el" href="md__data___parsers.html">Data Parsers</a></li>
+<li><a class="el" href="md_python-sys-sage.html"><b>Python API</b></a></li>
 <li><b>API documentation</b><ul>
 <li><a href="class_component.html">Component</a><ul>
 <li><a href="class_topology.html">Topology</a></li>
@@ -131,6 +132,12 @@ Documentation overview</h1>
 <li><a href="class_couplingmap.html">CouplingMap</a></li>
 </ul>
 </li>
+<li>External Interfaces<ul>
+<li>Intel PQOS</li>
+<li>NVidia MIG</li>
+<li>/proc/cpuinfo</li>
+</ul>
+</li>
 <li>Input Parsers<ul>
 <li>caps-numa-benchmark</li>
 <li>cccbench</li>
@@ -140,28 +147,18 @@ Documentation overview</h1>
 <li>qdmi</li>
 </ul>
 </li>
-<li>External Interfaces<ul>
-<li>Intel PQOS</li>
-<li>NVidia MIG</li>
-<li>/proc/cpuinfo</li>
-</ul>
-</li>
 <li>Data Sources<ul>
 <li>caps-numa-benchmark</li>
 <li><a href="hwloc-output_8cpp.html"><b>hwloc</b></a></li>
-<li>mt4g </li>
+<li>mt4g</li>
 </ul>
 </li>
+<li><a class="el" href="md_xmlio.html">XML import/export</a></li>
 </ul>
 </li>
 </ul>
 <h1><a class="anchor" id="autotoc_md25"></a>
-- <a class="el" href="md_xmlio.html">XML import/export</a></h1>
-<ul>
-<li><a class="el" href="md_python-sys-sage.html"><b>Python API</b></a></li>
-</ul>
-<h1><a class="anchor" id="autotoc_md26"></a>
-Python API (Experimental)</h1>
+Python API</h1>
 <p>sys-sage now offers a Python API for rapid prototyping and integration with Python-based tools. You can:</p>
 <ul>
 <li>Load and traverse system topologies</li>
@@ -170,9 +167,9 @@ Python API (Experimental)</h1>
 <li>Attach and retrieve custom attributes</li>
 </ul>
 <p>See <a class="el" href="md_python-sys-sage.html">sys-sage Python API doc</a> for details and usage examples.</p>
-<h1><a class="anchor" id="autotoc_md27"></a>
+<h1><a class="anchor" id="autotoc_md26"></a>
 Examples:</h1>
-<h3><a class="anchor" id="autotoc_md28"></a>
+<h3><a class="anchor" id="autotoc_md27"></a>
 Building and Exporting a System Topology</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sys_sage.hpp&gt;</span></div>
 <div class="line"> </div>
@@ -191,7 +188,7 @@ Building and Exporting a System Topology</h3>
 <div class="ttc" id="aclasssys__sage_1_1_chip_html"><div class="ttname"><a href="classsys__sage_1_1_chip.html">sys_sage::Chip</a></div><div class="ttdoc">Represents a building block of a node (CPU socket, GPU, NIC, etc.).</div><div class="ttdef"><b>Definition</b> Chip.hpp:17</div></div>
 <div class="ttc" id="aclasssys__sage_1_1_data_path_html"><div class="ttname"><a href="classsys__sage_1_1_data_path.html">sys_sage::DataPath</a></div><div class="ttdoc">Represents a data path (arbitrary relation or data movement) between two Components in the topology.</div><div class="ttdef"><b>Definition</b> DataPath.hpp:23</div></div>
 <div class="ttc" id="aclasssys__sage_1_1_node_html"><div class="ttname"><a href="classsys__sage_1_1_node.html">sys_sage::Node</a></div><div class="ttdef"><b>Definition</b> Node.hpp:12</div></div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md29"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md28"></a>
 Querying Components and Relations</h3>
 <div class="fragment"><div class="line"><span class="comment">// Find all &quot;chips&quot; in the system</span></div>
 <div class="line">std::vector&lt;sys_sage::Component*&gt; chips;</div>
@@ -202,14 +199,21 @@ Querying Components and Relations</h3>
 <div class="line">    rel-&gt;Print();</div>
 <div class="line">}</div>
 <div class="ttc" id="anamespace_relation_type_html"><div class="ttname"><a href="namespace_relation_type.html">RelationType</a></div><div class="ttdoc">Enumerates all supported relation types in sys-sage.</div></div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md30"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md29"></a>
 Python API</h3>
 <div class="fragment"><div class="line"><span class="keyword">import</span> sys_sage</div>
 <div class="line"> </div>
 <div class="line">root = sys_sage.import_from_xml(<span class="stringliteral">&quot;system.xml&quot;</span>)</div>
 <div class="line"><span class="keywordflow">for</span> gpu <span class="keywordflow">in</span> root.get_all_subcomponents_by_type(<span class="stringliteral">&quot;Gpu&quot;</span>):</div>
 <div class="line">    print(gpu.name, gpu.get_attribute(<span class="stringliteral">&quot;bandwidth&quot;</span>))</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md31"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md30"></a>
+Documentation Versioning</h2>
+<ul>
+<li><a href="https://stepanvanecek.github.io/sys-sage/latest/html/index.html">latest</a></li>
+<li><a href="https://stepanvanecek.github.io/sys-sage/1.0.0/html/index.html">1.0.0</a></li>
+<li><a href="https://stepanvanecek.github.io/sys-sage/0.5.2/html/index.html">0.5.2</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md31"></a>
 About</h1>
 <p>sys-sage has been created by Stepan Vanecek (<a href="#" onclick="location.href='mai'+'lto:'+'ste'+'pa'+'n.v'+'an'+'ece'+'k@'+'tum'+'.d'+'e'; return false;">stepa<span class="obfuscator">.nosp@m.</span>n.va<span class="obfuscator">.nosp@m.</span>necek<span class="obfuscator">.nosp@m.</span>@tum<span class="obfuscator">.nosp@m.</span>.de</a>) and the <a href="https://www.ce.cit.tum.de/en/caps/homepage/">CAPS TUM</a>. Please contact us in case of questions, bug reporting etc.</p>
 <p>The source code can be found at <a href="https://github.com/caps-tum/sys-sage">https://github.com/caps-tum/sys-sage</a> .</p>

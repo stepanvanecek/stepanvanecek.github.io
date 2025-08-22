@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>sys-sage: sys-sage Python version documentation</title>
+<title>sys-sage: sys-sage Python API documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,65 +71,155 @@ $(function() {
 
 </div><!-- top -->
 <div><div class="header">
-  <div class="headertitle"><div class="title">sys-sage Python version documentation</div></div>
+  <div class="headertitle"><div class="title">sys-sage Python API documentation</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md35"></a> The sys-sage module is the Python version of the sys-sage library, which was already implemented for C++. This documentation focuses on the Python version of the sys-sage library, here called the sys-sage module. It does not contain a list of all functions, choosing instead to focus more on the key aspects and avoiding redundancy.</p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md35"></a> The <em>sys-sage</em> library provides bindings for the Python programming language through the <em>sys-sage</em> module. This documenation offers a brief introduction.</p>
 <h1><a class="anchor" id="autotoc_md36"></a>
 Installation</h1>
-<p>To install the <code>sys_sage</code> module from source, ensure that Python and Pybind11 are already installed on your system. You can then use CMake for the installation by setting the flag <code>-DPYBIND=ON</code>.</p>
-<h1><a class="anchor" id="autotoc_md37"></a>
+<p>First make sure that <code>python</code> (&gt;= 3.10) and <code>pybind11</code> are already installed on your system. You can then pass the <code>-DPY_SYS_SAGE=ON</code> flag to CMake when compiling the library to also build the module. The following command can be executed at the root of the repo</p>
+<div class="fragment"><div class="line">cmake -B build -DCMAKE_BUILD_TYPE=Release -DPY_SYS_SAGE=ON .</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md37"></a>
 Module Import</h1>
-<p>After installation the module can now be imported: </p><div class="fragment"><div class="line"><span class="keyword">import</span> sys_sage</div>
+<p>After installation the module can now be imported:</p>
+<div class="fragment"><div class="line"><span class="keyword">import</span> sys_sage</div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md38"></a>
 Object initialistaion</h1>
-<p>To create Component and Datapath objects, you can utilize the provided initialization functions. For instance, a Component object can be instantiated as follows:</p>
+<p>To create Component and Relation objects, you can utilize the provided initialization functions. For instance, a Component object can be instantiated as follows:</p>
 <div class="fragment"><div class="line">c = <a class="code hl_class" href="classsys__sage_1_1_component.html">sys_sage.Component</a>(parent, 0, <span class="stringliteral">&quot;Generic Component&quot;</span>)</div>
-<div class="ttc" id="aclasssys__sage_1_1_component_html"><div class="ttname"><a href="classsys__sage_1_1_component.html">sys_sage::Component</a></div><div class="ttdoc">Generic class for all hardware and logical components in sys-sage.</div><div class="ttdef"><b>Definition</b> Component.hpp:36</div></div>
-</div><!-- fragment --><p> The sys-sage library exposes all known constructors for <code>Component</code> and its subclasses as Python initialization functions, complete with their default values. In the example above, if the component type is not explicitly provided, it will automatically be assigned <code>None</code> during initialization.</p>
-<p>Throughout this documentation, c will consistently refer to a Component object, and d will refer to a Datapath object in all given examples.</p>
+<div class="ttc" id="aclasssys__sage_1_1_component_html"><div class="ttname"><a href="classsys__sage_1_1_component.html">sys_sage::Component</a></div><div class="ttdoc">Generic class for all hardware and logical components in sys-sage.</div><div class="ttdef"><b>Definition</b> Component.hpp:37</div></div>
+</div><!-- fragment --><p> The <em>sys-sage</em> library exposes all known constructors for <code>Component</code> and its subclasses as Python initialization functions, complete with their default values. In the example above, if the component type is not explicitly provided, it will automatically be assigned <code>None</code> during initialization.</p>
+<p>Throughout this documentation, <code>c</code> will consistently refer to a Component object.</p>
 <h1><a class="anchor" id="autotoc_md39"></a>
 Methods</h1>
 <p>Calling class methods in Python is very similar to the C++ version:</p>
 <div class="fragment"><div class="line">c.InsertChild(child)</div>
-</div><!-- fragment --><p> However, some methods require a workaround. For instance, directly passing a list as an argument to be populated will not work:</p>
-<div class="fragment"><div class="line">c.GetAllChildrenByType(children_list, type) <span class="comment"># This will not work as expected</span></div>
-</div><!-- fragment --><p> Instead, for methods that take a list of Component or Datapath objects as arguments (which are currently not working as direct in-place modifications), an alternative approach is provided. You should append the results to an existing list, as shown below:</p>
-<div class="fragment"><div class="line">children_list += c.GetAllChildrenByType(type)</div>
-</div><!-- fragment --><p> In general, for all methods that expect a list of Component or Datapath objects as arguments to be modified in-place, you should use the alternative method of appending the returned list to your existing list.</p>
-<p>Finally, certain attributes, such as id and name, are not accessible via standard getters and setters. The specific methods for reading and writing these attributes are detailed in the "Attributes" section of this documentation.</p>
+</div><!-- fragment --><p> However, certain attributes, such as id and name, are not accessible via standard getters and setters. The specific methods for reading and writing these attributes are detailed in the "Attributes" section of this documentation.</p>
 <h1><a class="anchor" id="autotoc_md40"></a>
 Module functions</h1>
-<p>All of the parsers, that provided by sys-sage library are also included in the Python module:</p>
+<p>All the default parsers of the <em>sys-sage</em> library are also included in the Python module:</p>
 <div class="fragment"><div class="line"><a class="code hl_function" href="caps-numa-benchmark_8hpp.html#af6f071783d703badd5961ab7ad0b848b">sys_sage.parseCapsNumaBenchmark</a>(root,<span class="stringliteral">&quot;benchmark.csv&quot;</span>,<span class="stringliteral">&quot;;&quot;</span>)</div>
 <div class="ttc" id="acaps-numa-benchmark_8hpp_html_af6f071783d703badd5961ab7ad0b848b"><div class="ttname"><a href="caps-numa-benchmark_8hpp.html#af6f071783d703badd5961ab7ad0b848b">sys_sage::parseCapsNumaBenchmark</a></div><div class="ttdeci">int parseCapsNumaBenchmark(Component *rootComponent, std::string benchmarkPath, std::string delim=&quot;;&quot;)</div><div class="ttdef"><b>Definition</b> caps-numa-benchmark.cpp:9</div></div>
 </div><!-- fragment --><h1><a class="anchor" id="autotoc_md41"></a>
 Attributes</h1>
 <h2><a class="anchor" id="autotoc_md42"></a>
-Makros / Module Attributes</h2>
-<p>In the C++ version of the sys-sage library, macros like SYS_SAGE_COMPONENT_NONE are used to represent specific integer values. The Python module provides an analogous way to access these values for use with functions:</p>
+Module Attributes</h2>
+<p>The Python module provides a one-to-one correspondance to the known <em>sys-sage</em> constants.</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">C++   </th><th class="markdownTableHeadNone">Python    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ComponentType::None   </td><td class="markdownTableBodyNone">COMPONENT_NONE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ComponentType::Thread   </td><td class="markdownTableBodyNone">COMPONENT_THREAD    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ComponentType::Core   </td><td class="markdownTableBodyNone">COMPONENT_CORE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ComponentType::Cache   </td><td class="markdownTableBodyNone">COMPONENT_CACHE    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ComponentType::Subdivision   </td><td class="markdownTableBodyNone">COMPONENT_SUBDIVISION    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ComponentType::Numa   </td><td class="markdownTableBodyNone">COMPONENT_NUMA    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ComponentType::Chip   </td><td class="markdownTableBodyNone">COMPONENT_CHIP    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ComponentType::Memory   </td><td class="markdownTableBodyNone">COMPONENT_MEMORY    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ComponentType::Storage   </td><td class="markdownTableBodyNone">COMPONENT_STORAGE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ComponentType::Node   </td><td class="markdownTableBodyNone">COMPONENT_NODE    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ComponentType::QuantumBackend   </td><td class="markdownTableBodyNone">COMPONENT_QUANTUMBACKEND    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ComponentType::AtomSite   </td><td class="markdownTableBodyNone">COMPONENT_ATOMSITE    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ComponentType::Qubit   </td><td class="markdownTableBodyNone">COMPONENT_QUBIT    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ComponentType::Topology   </td><td class="markdownTableBodyNone">COMPONENT_TOPOLOGY    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">SubdivisionType::None   </td><td class="markdownTableBodyNone">SUBDIVISION_TYPE_NONE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">SubdivisionType::GpuSM   </td><td class="markdownTableBodyNone">SUBDIVISION_TYPE_GPU_SM    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ChipType::None   </td><td class="markdownTableBodyNone">CHIP_TYPE_NONE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ChipType::Cpu   </td><td class="markdownTableBodyNone">CHIP_TYPE_CPU    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">ChipType::CpuSocket   </td><td class="markdownTableBodyNone">CHIP_TYPE_CPU_SOCKET    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">ChipType::Gpu   </td><td class="markdownTableBodyNone">CHIP_TYPE_GPU    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">RelationType::Any   </td><td class="markdownTableBodyNone">RELATION_TYPE_ANY    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">RelationType::Relation   </td><td class="markdownTableBodyNone">RELATION_TYPE_RELATION    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">RelationType::DataPath   </td><td class="markdownTableBodyNone">RELATION_TYPE_DATAPATH    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">RelationType::QuantumGate   </td><td class="markdownTableBodyNone">RELATION_TYPE_QUANTUMGATE    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">RelationType::CouplingMap   </td><td class="markdownTableBodyNone">RELATION_TYPE_COUPLINGMAP    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DataPathType::Any   </td><td class="markdownTableBodyNone">DATAPATH_TYPE_ANY    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DataPathType::None   </td><td class="markdownTableBodyNone">DATAPATH_TYPE_NONE    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DataPathType::Logical   </td><td class="markdownTableBodyNone">DATAPATH_TYPE_LOGICAL    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DataPathType::Physical   </td><td class="markdownTableBodyNone">DATAPATH_TYPE_PHYSICAL    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DataPathType::Datatransfer   </td><td class="markdownTableBodyNone">DATAPATH_TYPE_DATATRANSFER    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DataPathType::L3CAT   </td><td class="markdownTableBodyNone">DATAPATH_TYPE_L3CAT    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DataPathType::MIG   </td><td class="markdownTableBodyNone">DATAPATH_TYPE_MIG    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DataPathType::C2C   </td><td class="markdownTableBodyNone">DATAPATH_TYPE_C2C    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DataPathDirection::Any   </td><td class="markdownTableBodyNone">DATAPATH_DIRECTION_ANY    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DataPathDirection::Outgoing   </td><td class="markdownTableBodyNone">DATAPATH_DIRECTION_OUTGOING    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DataPathDirection::Incoming   </td><td class="markdownTableBodyNone">DATAPATH_DIRECTION_INCOMING    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">DataPathOrientation::Oriented   </td><td class="markdownTableBodyNone">DATAPATH_ORIENTATION_ORIENTED    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">DataPathOrientation::Bidirectional   </td><td class="markdownTableBodyNone">DATAPATH_ORIENTATION_BIDIRECTIONAL    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">QuantumGateType::Unknown   </td><td class="markdownTableBodyNone">QUANTUMGATE_TYPE_UNKNOWN    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">QuantumGateType::Id   </td><td class="markdownTableBodyNone">QUANTUMGATE_TYPE_ID    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">QuantumGateType::X   </td><td class="markdownTableBodyNone">QUANTUMGATE_TYPE_X    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">QuantumGateType::Rz   </td><td class="markdownTableBodyNone">QUANTUMGATE_TYPE_RZ    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">QuantumGateType::Cnot   </td><td class="markdownTableBodyNone">QUANTUMGATE_TYPE_CNOT    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">QuantumGateType::Sx   </td><td class="markdownTableBodyNone">QUANTUMGATE_TYPE_SX    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">QuantumGateType::Toffoli   </td><td class="markdownTableBodyNone">QUANTUMGATE_TYPE_TOFFOLI   </td></tr>
+</table>
+<p>An example would be:</p>
 <div class="fragment"><div class="line">c.CountAllSubcomponentsByType(sys_sage.COMPONENT_NONE)</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md43"></a>
 Properties</h2>
-<p>As previously mentioned, some attributes aren't accessed using traditional getters or setters. Instead, <code>sys_sage</code> offers a more Pythonic approach to access them:</p>
+<p>As previously mentioned, some attributes aren't accessed using traditional getters or setters. Instead, <code>sys-sage</code> offers a more pythonic approach to access them:</p>
 <div class="fragment"><div class="line">name = c.name</div>
 <div class="line">c.name = <span class="stringliteral">&quot;name&quot;</span></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md44"></a>
 Dynamic Attributes</h2>
-<p>Similar to the core sys-sage library, users can define their own custom attributes.</p>
-<p>For the Component class, dynamic attributes are accessed using the [] operator:</p>
-<div class="fragment"><div class="line">c[<span class="stringliteral">&quot;dynamic&quot;</span>] = <span class="stringliteral">&quot;attribute&quot;</span></div>
-<div class="line">c[<span class="stringliteral">&quot;dynamic&quot;</span>] <span class="comment"># Returns &quot;attribute&quot;</span></div>
-<div class="line">c[0]         <span class="comment"># Returns &quot;attribute&quot; (assuming 0 is the index assigned to &quot;dynamic&quot;)</span></div>
-</div><!-- fragment --><p> For Datapath objects, dynamic attributes are treated like basic attributes, allowing direct access:</p>
-<div class="fragment"><div class="line">d.dynamic = <span class="stringliteral">&quot;attribute&quot;</span></div>
-<div class="line">d.dynamic <span class="comment"># Returns &quot;attribute&quot;</span></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md45"></a>
+<p>Similar to the core <em>sys-sage</em> library, users can define their own custom attributes. The usage resembles that of dictionaries.</p>
+<div class="fragment"><div class="line">c[<span class="stringliteral">&quot;foo&quot;</span>] = <span class="stringliteral">&quot;test&quot;</span></div>
+<div class="line">c[<span class="stringliteral">&quot;foo&quot;</span>]            <span class="comment"># returns &quot;test&quot;</span></div>
+<div class="line">c[<span class="stringliteral">&quot;bar&quot;</span>] = 1        <span class="comment"># values can be arbitrary</span></div>
+<div class="line">c[0]                <span class="comment"># returns 1, since key-value pairs are ordered in lexicographical order of the keys</span></div>
+</div><!-- fragment --><p> The same holds for relations.</p>
+<h1><a class="anchor" id="autotoc_md45"></a>
 XML I/O</h1>
 <p>XML import and export is enabled, however there are some difference to the original library functions.</p>
 <h2><a class="anchor" id="autotoc_md46"></a>
 XML Export</h2>
-<p>When exporting data in sys-sage, users can define custom functions to parse component attributes. Two distinct functions can be specified: one for simple attributes and another for complex attributes.</p>
+<p>When exporting data in <em>sys-sage</em>, users can define custom functions to parse component attributes. Two distinct functions can be specified: one for simple attributes and another for complex attributes.</p>
 <p>For simple attributes, the custom function must return either a string or None. The processing of the key-value pair is entirely at the user's discretion. Here's an example:</p>
 <div class="fragment"><div class="line"><span class="keyword">def </span>search_custom_simple(key: str, value) -&gt; str:</div>
 <div class="line">    <span class="keywordflow">if</span> <span class="stringliteral">&quot;example&quot;</span> <span class="keywordflow">in</span> key:</div>
@@ -151,7 +241,7 @@ XML Import</h2>
 <div class="line">        y = x.split(<span class="stringliteral">&quot;value=\&quot;&quot;</span>)[-1]</div>
 <div class="line">        <span class="keywordflow">return</span> y.rstrip(<span class="stringliteral">&quot;\&quot;/&gt;&quot;</span>)</div>
 <div class="line">    <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
-</div><!-- fragment --><p>Similarly, for complex attributes, the XML node as a string is forwarded. However, unlike the simple attribute function, the custom function for complex attributes also gains access to the respective Component object (c). This allows for more profound modifications to the component's attributes. This function is expected to return only a success status (e.g., 1 for success, 0 for failure).</p>
+</div><!-- fragment --><p>Similarly, for complex attributes, the XML node as a string is forwarded. However, unlike the simple attribute function, the custom function for complex attributes also gains access to the respective Component object (<code>c</code>). This allows for more profound modifications to the component's attributes. This function is expected to return only a success status (e.g., 1 for success, 0 for failure).</p>
 <div class="fragment"><div class="line"><span class="keyword">def </span>import_search_complex(x, c):</div>
 <div class="line">    <span class="comment"># x will be an XML string like &#39;&lt;Attribute key=&quot;complex&quot; value=&quot;123&quot;/&gt;&#39;</span></div>
 <div class="line">    <span class="comment"># c is the Component object to which this attribute belongs</span></div>

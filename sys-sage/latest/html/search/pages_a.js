@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['version_20documentation_0',['sys-sage Python version documentation',['../md_python-sys-sage.html',1,'']]]
+  ['xml_20–_20functionality_0',['XML – Functionality',['../md_xmlio.html',1,'']]]
 ];

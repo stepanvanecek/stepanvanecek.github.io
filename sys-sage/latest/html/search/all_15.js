@@ -4,8 +4,6 @@ var searchData=
   ['xml_20export_1',['XML Export',['../md_xmlio.html#autotoc_md49',1,'XML - Export'],['../md_python-sys-sage.html#autotoc_md46',1,'XML Export']]],
   ['xml_20i_20o_2',['XML I/O',['../md_python-sys-sage.html#autotoc_md45',1,'']]],
   ['xml_20import_3',['XML Import',['../md_xmlio.html#autotoc_md51',1,'XML - Import'],['../md_python-sys-sage.html#autotoc_md47',1,'XML Import']]],
-  ['xml_20import_20export_4',['- @ref &quot;/Users/stepan/phd/repos/caps_sys-sage/docs/xmlio.md&quot; &quot;XML import/export&quot;',['../index.html#autotoc_md25',1,'']]],
-  ['xmlio_20md_20xml_20import_20export_5',['- @ref &quot;/Users/stepan/phd/repos/caps_sys-sage/docs/xmlio.md&quot; &quot;XML import/export&quot;',['../index.html#autotoc_md25',1,'']]],
-  ['xmlrelevantnames_6',['xmlRelevantNames',['../hwloc_8hpp.html#a1838fbd36446aecc4d81eb006bd94644',1,'sys_sage']]],
-  ['xmlrelevantobjecttypes_7',['xmlRelevantObjectTypes',['../hwloc_8hpp.html#a0868267e30f0b626139c582abac585f8',1,'sys_sage']]]
+  ['xmlrelevantnames_4',['xmlRelevantNames',['../hwloc_8hpp.html#a1838fbd36446aecc4d81eb006bd94644',1,'sys_sage']]],
+  ['xmlrelevantobjecttypes_5',['xmlRelevantObjectTypes',['../hwloc_8hpp.html#a0868267e30f0b626139c582abac585f8',1,'sys_sage']]]
 ];

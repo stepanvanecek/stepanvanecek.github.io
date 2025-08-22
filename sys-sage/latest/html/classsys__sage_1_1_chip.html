@@ -116,12 +116,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ada2dfb0dea452580d2e2126e22c39e17" id="r_ada2dfb0dea452580d2e2126e22c39e17"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada2dfb0dea452580d2e2126e22c39e17">GetModel</a> () const</td></tr>
 <tr class="memdesc:ada2dfb0dea452580d2e2126e22c39e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the model of the chip.  <br /></td></tr>
 <tr class="separator:ada2dfb0dea452580d2e2126e22c39e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23476f046893f2f9ce453ad5d76546ba" id="r_a23476f046893f2f9ce453ad5d76546ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23476f046893f2f9ce453ad5d76546ba">SetChipType</a> (int chipType)</td></tr>
-<tr class="memdesc:a23476f046893f2f9ce453ad5d76546ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the type of the chip.  <br /></td></tr>
-<tr class="separator:a23476f046893f2f9ce453ad5d76546ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a301cde3a4532fc60c1dc5905e9e3de69" id="r_a301cde3a4532fc60c1dc5905e9e3de69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a301cde3a4532fc60c1dc5905e9e3de69">GetChipType</a> () const</td></tr>
-<tr class="memdesc:a301cde3a4532fc60c1dc5905e9e3de69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of the chip.  <br /></td></tr>
-<tr class="separator:a301cde3a4532fc60c1dc5905e9e3de69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6405dd5d42745bf6565f2ab48348074e" id="r_a6405dd5d42745bf6565f2ab48348074e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6405dd5d42745bf6565f2ab48348074e">SetChipType</a> (ChipType::type chipType)</td></tr>
+<tr class="memdesc:a6405dd5d42745bf6565f2ab48348074e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the type of the chip.  <br /></td></tr>
+<tr class="separator:a6405dd5d42745bf6565f2ab48348074e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91c865ae2c169125c67e43b651005bdf" id="r_a91c865ae2c169125c67e43b651005bdf"><td class="memItemLeft" align="right" valign="top">ChipType::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91c865ae2c169125c67e43b651005bdf">GetChipType</a> () const</td></tr>
+<tr class="memdesc:a91c865ae2c169125c67e43b651005bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the type of the chip.  <br /></td></tr>
+<tr class="separator:a91c865ae2c169125c67e43b651005bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c2f9ff04d5b219ccdd19e5a65b7c514" id="r_a5c2f9ff04d5b219ccdd19e5a65b7c514"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c2f9ff04d5b219ccdd19e5a65b7c514">UpdateMIGSettings</a> (std::string uuid=&quot;&quot;)</td></tr>
 <tr class="memdesc:a5c2f9ff04d5b219ccdd19e5a65b7c514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the MIG settings for the chip (NVIDIA-specific).  <br /></td></tr>
 <tr class="separator:a5c2f9ff04d5b219ccdd19e5a65b7c514"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,12 +235,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>PrintSubtree</b> () c
 <tr class="memitem:aaa7c5a5bc47f5d0e0154320a61c9d4a5 inherit pub_methods_classsys__sage_1_1_component" id="r_aaa7c5a5bc47f5d0e0154320a61c9d4a5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classsys__sage_1_1_component.html">Component</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_component.html#aaa7c5a5bc47f5d0e0154320a61c9d4a5">GetNthDescendents</a> (int <a class="el" href="classsys__sage_1_1_component.html#a766867133d2273ceb287637583138101">depth</a>)</td></tr>
 <tr class="memdesc:aaa7c5a5bc47f5d0e0154320a61c9d4a5 inherit pub_methods_classsys__sage_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a std::vector of <a class="el" href="classsys__sage_1_1_component.html" title="Generic class for all hardware and logical components in sys-sage.">Component</a> pointers, which reside 'depth' levels deeper. The tree is traversed in order as the children are stored in the std::vector. E.g. if depth=1, only children of the current are retrieved; if depth=2, only children of the children are retrieved..  <br /></td></tr>
 <tr class="separator:aaa7c5a5bc47f5d0e0154320a61c9d4a5 inherit pub_methods_classsys__sage_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82687755da54652032bb7aca4c2d96f0 inherit pub_methods_classsys__sage_1_1_component" id="r_a82687755da54652032bb7aca4c2d96f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_component.html#a82687755da54652032bb7aca4c2d96f0">GetSubcomponentsByType</a> (std::vector&lt; <a class="el" href="classsys__sage_1_1_component.html">Component</a> * &gt; *outArray, int <a class="el" href="classsys__sage_1_1_component.html#a219aacfb50e3025ac4bfe1c3236c1d34">componentType</a>)</td></tr>
-<tr class="memdesc:a82687755da54652032bb7aca4c2d96f0 inherit pub_methods_classsys__sage_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a std::vector of <a class="el" href="classsys__sage_1_1_component.html" title="Generic class for all hardware and logical components in sys-sage.">Component</a> pointers, which reside in the subtree and have a matching type. The tree is traversed DFS in order as the children are stored in each std::vector children.  <br /></td></tr>
-<tr class="separator:a82687755da54652032bb7aca4c2d96f0 inherit pub_methods_classsys__sage_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c313e41c58c8124ba56eab0e7d22cf3 inherit pub_methods_classsys__sage_1_1_component" id="r_a6c313e41c58c8124ba56eab0e7d22cf3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classsys__sage_1_1_component.html">Component</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_component.html#a6c313e41c58c8124ba56eab0e7d22cf3">GetSubcomponentsByType</a> (ComponentType::type _componentType)</td></tr>
-<tr class="memdesc:a6c313e41c58c8124ba56eab0e7d22cf3 inherit pub_methods_classsys__sage_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a std::vector of <a class="el" href="classsys__sage_1_1_component.html" title="Generic class for all hardware and logical components in sys-sage.">Component</a> pointers, which reside in the subtree and have a matching type. The tree is traversed DFS in order as the children are stored in the std::vector.  <br /></td></tr>
-<tr class="separator:a6c313e41c58c8124ba56eab0e7d22cf3 inherit pub_methods_classsys__sage_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2581cf51ba958d2319f7c2c00cd4cac5 inherit pub_methods_classsys__sage_1_1_component" id="r_a2581cf51ba958d2319f7c2c00cd4cac5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_component.html#a2581cf51ba958d2319f7c2c00cd4cac5">GetSubcomponentsByType</a> (std::vector&lt; <a class="el" href="classsys__sage_1_1_component.html">Component</a> * &gt; *outArray, ComponentType::type <a class="el" href="classsys__sage_1_1_component.html#a219aacfb50e3025ac4bfe1c3236c1d34">componentType</a>)</td></tr>
+<tr class="memdesc:a2581cf51ba958d2319f7c2c00cd4cac5 inherit pub_methods_classsys__sage_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a std::vector of <a class="el" href="classsys__sage_1_1_component.html" title="Generic class for all hardware and logical components in sys-sage.">Component</a> pointers, which reside in the subtree and have a matching type. The tree is traversed DFS in order as the children are stored in each std::vector children.  <br /></td></tr>
+<tr class="separator:a2581cf51ba958d2319f7c2c00cd4cac5 inherit pub_methods_classsys__sage_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8b2d9ae8b2188938995a208f00834c4 inherit pub_methods_classsys__sage_1_1_component" id="r_ad8b2d9ae8b2188938995a208f00834c4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classsys__sage_1_1_component.html">Component</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_component.html#ad8b2d9ae8b2188938995a208f00834c4">GetSubcomponentsByType</a> (ComponentType::type _componentType)</td></tr>
+<tr class="memdesc:ad8b2d9ae8b2188938995a208f00834c4 inherit pub_methods_classsys__sage_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a std::vector of <a class="el" href="classsys__sage_1_1_component.html" title="Generic class for all hardware and logical components in sys-sage.">Component</a> pointers, which reside in the subtree and have a matching type. The tree is traversed DFS in order as the children are stored in the std::vector.  <br /></td></tr>
+<tr class="separator:ad8b2d9ae8b2188938995a208f00834c4 inherit pub_methods_classsys__sage_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf88f6d2e0bd8f5e1ed151e640c304ad inherit pub_methods_classsys__sage_1_1_component" id="r_acf88f6d2e0bd8f5e1ed151e640c304ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_component.html#acf88f6d2e0bd8f5e1ed151e640c304ad">GetComponentsInSubtree</a> (std::vector&lt; <a class="el" href="classsys__sage_1_1_component.html">Component</a> * &gt; *outArray)</td></tr>
 <tr class="memdesc:acf88f6d2e0bd8f5e1ed151e640c304ad inherit pub_methods_classsys__sage_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a std::vector of <a class="el" href="classsys__sage_1_1_component.html" title="Generic class for all hardware and logical components in sys-sage.">Component</a> pointers, which form the subtree (current node and all the subcomponents) of this.  <br /></td></tr>
 <tr class="separator:acf88f6d2e0bd8f5e1ed151e640c304ad inherit pub_methods_classsys__sage_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -428,14 +428,14 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a301cde3a4532fc60c1dc5905e9e3de69" name="a301cde3a4532fc60c1dc5905e9e3de69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a301cde3a4532fc60c1dc5905e9e3de69">&#9670;&#160;</a></span>GetChipType()</h2>
+<a id="a91c865ae2c169125c67e43b651005bdf" name="a91c865ae2c169125c67e43b651005bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91c865ae2c169125c67e43b651005bdf">&#9670;&#160;</a></span>GetChipType()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sys_sage::Chip::GetChipType </td>
+          <td class="memname">sys_sage::ChipType::type sys_sage::Chip::GetChipType </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -543,8 +543,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a23476f046893f2f9ce453ad5d76546ba" name="a23476f046893f2f9ce453ad5d76546ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23476f046893f2f9ce453ad5d76546ba">&#9670;&#160;</a></span>SetChipType()</h2>
+<a id="a6405dd5d42745bf6565f2ab48348074e" name="a6405dd5d42745bf6565f2ab48348074e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6405dd5d42745bf6565f2ab48348074e">&#9670;&#160;</a></span>SetChipType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,7 +552,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void sys_sage::Chip::SetChipType </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>chipType</em></span></td><td>)</td>
+          <td class="paramtype">ChipType::type</td>          <td class="paramname"><span class="paramname"><em>chipType</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>

@@ -130,11 +130,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6f1cd5066e3a09da6843c40f3719808" id="r_ad6f1cd5066e3a09da6843c40f3719808"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6f1cd5066e3a09da6843c40f3719808">UpdateTarget</a> (<a class="el" href="classsys__sage_1_1_component.html">Component</a> *_new_target)</td></tr>
 <tr class="memdesc:ad6f1cd5066e3a09da6843c40f3719808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the target of the <a class="el" href="classsys__sage_1_1_data_path.html" title="Represents a data path (arbitrary relation or data movement) between two Components in the topology.">DataPath</a>. The datapath is removed from the outgoing/incoming vectors of the old target and added to the vectors of the new target.  <br /></td></tr>
 <tr class="separator:ad6f1cd5066e3a09da6843c40f3719808"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a221ab83bccff299f4f12a82b611948d5" id="r_a221ab83bccff299f4f12a82b611948d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a221ab83bccff299f4f12a82b611948d5">GetDataPathType</a> () const</td></tr>
-<tr class="separator:a221ab83bccff299f4f12a82b611948d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d3b0c37838dbc02a37ba95c2db38a3e" id="r_a4d3b0c37838dbc02a37ba95c2db38a3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d3b0c37838dbc02a37ba95c2db38a3e">GetOrientation</a> () const</td></tr>
-<tr class="memdesc:a4d3b0c37838dbc02a37ba95c2db38a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the orientation of the <a class="el" href="classsys__sage_1_1_data_path.html" title="Represents a data path (arbitrary relation or data movement) between two Components in the topology.">DataPath</a> (DataPathOrientation::Oriented or DataPathOrientation::Bidirectional).  <br /></td></tr>
-<tr class="separator:a4d3b0c37838dbc02a37ba95c2db38a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ade390562d69c138a8591145d7b579" id="r_ae5ade390562d69c138a8591145d7b579"><td class="memItemLeft" align="right" valign="top">DataPathType::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5ade390562d69c138a8591145d7b579">GetDataPathType</a> () const</td></tr>
+<tr class="separator:ae5ade390562d69c138a8591145d7b579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0191164124ea1a2e2116c1b3f8e7022" id="r_ae0191164124ea1a2e2116c1b3f8e7022"><td class="memItemLeft" align="right" valign="top">DataPathOrientation::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0191164124ea1a2e2116c1b3f8e7022">GetOrientation</a> () const</td></tr>
+<tr class="memdesc:ae0191164124ea1a2e2116c1b3f8e7022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the orientation of the <a class="el" href="classsys__sage_1_1_data_path.html" title="Represents a data path (arbitrary relation or data movement) between two Components in the topology.">DataPath</a> (DataPathOrientation::Oriented or DataPathOrientation::Bidirectional).  <br /></td></tr>
+<tr class="separator:ae0191164124ea1a2e2116c1b3f8e7022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bbf2de7f049c96092f42c81f70f35fb" id="r_a4bbf2de7f049c96092f42c81f70f35fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bbf2de7f049c96092f42c81f70f35fb">Print</a> () const override</td></tr>
 <tr class="memdesc:a4bbf2de7f049c96092f42c81f70f35fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints basic information about the Data Path to stdout. Prints componentType and Id of the source and target Components, the bandwidth, load latency, and the attributes. For each attribute, the name and value are printed; the value is only retyped to uint64_t (so will print nonsensical values for other data types).  <br /></td></tr>
 <tr class="separator:a4bbf2de7f049c96092f42c81f70f35fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,9 +178,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2108d10fd6260ec4eb3426fd85e3dc22 inherit pub_methods_classsys__sage_1_1_relation" id="r_a2108d10fd6260ec4eb3426fd85e3dc22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_relation.html#a2108d10fd6260ec4eb3426fd85e3dc22">UpdateComponent</a> (<a class="el" href="classsys__sage_1_1_component.html">Component</a> *_old_component, <a class="el" href="classsys__sage_1_1_component.html">Component</a> *_new_component)</td></tr>
 <tr class="memdesc:a2108d10fd6260ec4eb3426fd85e3dc22 inherit pub_methods_classsys__sage_1_1_relation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the first occurrence of a given component.  <br /></td></tr>
 <tr class="separator:a2108d10fd6260ec4eb3426fd85e3dc22 inherit pub_methods_classsys__sage_1_1_relation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a455e31aba7c6c68b4fa35bd1492cc inherit pub_methods_classsys__sage_1_1_relation" id="r_a05a455e31aba7c6c68b4fa35bd1492cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_relation.html#a05a455e31aba7c6c68b4fa35bd1492cc">~Relation</a> ()=default</td></tr>
-<tr class="memdesc:a05a455e31aba7c6c68b4fa35bd1492cc inherit pub_methods_classsys__sage_1_1_relation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classsys__sage_1_1_relation.html" title="Abstract base class representing a multi-way connection among Components.">Relation</a> class.  <br /></td></tr>
-<tr class="separator:a05a455e31aba7c6c68b4fa35bd1492cc inherit pub_methods_classsys__sage_1_1_relation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7062c4bc5d0fda6122acf1012425acae inherit pub_methods_classsys__sage_1_1_relation" id="r_a7062c4bc5d0fda6122acf1012425acae"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_relation.html#a7062c4bc5d0fda6122acf1012425acae">~Relation</a> ()=default</td></tr>
+<tr class="memdesc:a7062c4bc5d0fda6122acf1012425acae inherit pub_methods_classsys__sage_1_1_relation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classsys__sage_1_1_relation.html" title="Abstract base class representing a multi-way connection among Components.">Relation</a> class.  <br /></td></tr>
+<tr class="separator:a7062c4bc5d0fda6122acf1012425acae inherit pub_methods_classsys__sage_1_1_relation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -401,14 +401,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ordered</b></td></tr>
 
 </div>
 </div>
-<a id="a221ab83bccff299f4f12a82b611948d5" name="a221ab83bccff299f4f12a82b611948d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a221ab83bccff299f4f12a82b611948d5">&#9670;&#160;</a></span>GetDataPathType()</h2>
+<a id="ae5ade390562d69c138a8591145d7b579" name="ae5ade390562d69c138a8591145d7b579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5ade390562d69c138a8591145d7b579">&#9670;&#160;</a></span>GetDataPathType()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sys_sage::DataPath::GetDataPathType </td>
+          <td class="memname">sys_sage::DataPathType::type sys_sage::DataPath::GetDataPathType </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
@@ -438,14 +438,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ordered</b></td></tr>
 
 </div>
 </div>
-<a id="a4d3b0c37838dbc02a37ba95c2db38a3e" name="a4d3b0c37838dbc02a37ba95c2db38a3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d3b0c37838dbc02a37ba95c2db38a3e">&#9670;&#160;</a></span>GetOrientation()</h2>
+<a id="ae0191164124ea1a2e2116c1b3f8e7022" name="ae0191164124ea1a2e2116c1b3f8e7022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0191164124ea1a2e2116c1b3f8e7022">&#9670;&#160;</a></span>GetOrientation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sys_sage::DataPath::GetOrientation </td>
+          <td class="memname">sys_sage::DataPathOrientation::type sys_sage::DataPath::GetOrientation </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>

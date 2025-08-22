@@ -6,6 +6,5 @@ var searchData=
   ['updatesource_3',['UpdateSource',['../classsys__sage_1_1_data_path.html#a2dc792a46da95add65dec043b095bb36',1,'sys_sage::DataPath']]],
   ['updatetarget_4',['UpdateTarget',['../classsys__sage_1_1_data_path.html#ad6f1cd5066e3a09da6843c40f3719808',1,'sys_sage::DataPath']]],
   ['usage_5',['Possible Areas of Usage',['../md__concept.html#autotoc_md4',1,'']]],
-  ['use_20sys_20sage_6',['Why use sys-sage?',['../index.html#autotoc_md22',1,'']]],
-  ['users_20stepan_20phd_20repos_20caps_5fsys_20sage_20docs_20xmlio_20md_20xml_20import_20export_7',['- @ref &quot;/Users/stepan/phd/repos/caps_sys-sage/docs/xmlio.md&quot; &quot;XML import/export&quot;',['../index.html#autotoc_md25',1,'']]]
+  ['use_20sys_20sage_6',['Why use sys-sage?',['../index.html#autotoc_md22',1,'']]]
 ];

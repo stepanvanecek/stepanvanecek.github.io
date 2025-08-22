@@ -17,10 +17,10 @@ var searchData=
   ['deprecated_20list_14',['Deprecated List',['../deprecated.html',1,'']]],
   ['depth_15',['depth',['../classsys__sage_1_1_component.html#a766867133d2273ceb287637583138101',1,'sys_sage::Component']]],
   ['design_20of_20sys_20sage_16',['Design of sys-sage',['../md__concept.html#autotoc_md8',1,'']]],
-  ['docs_20xmlio_20md_20xml_20import_20export_17',['- @ref &quot;/Users/stepan/phd/repos/caps_sys-sage/docs/xmlio.md&quot; &quot;XML import/export&quot;',['../index.html#autotoc_md25',1,'']]],
-  ['documentation_18',['sys-sage Data Parsers Documentation',['../md__data___parsers.html',1,'']]],
-  ['documentation_19',['sys-sage Python version documentation',['../md_python-sys-sage.html',1,'']]],
-  ['documentation_20overview_20',['Documentation overview',['../index.html#autotoc_md24',1,'']]],
+  ['documentation_17',['sys-sage Data Parsers Documentation',['../md__data___parsers.html',1,'']]],
+  ['documentation_18',['sys-sage Python API documentation',['../md_python-sys-sage.html',1,'']]],
+  ['documentation_20overview_19',['Documentation overview',['../index.html#autotoc_md24',1,'']]],
+  ['documentation_20versioning_20',['Documentation Versioning',['../index.html#autotoc_md30',1,'']]],
   ['dynamic_20attributes_21',['Dynamic Attributes',['../md_python-sys-sage.html#autotoc_md44',1,'']]],
   ['dynamic_20properties_22',['sys-sage: A Library for Representing System Architecture and Dynamic Properties',['../index.html',1,'']]]
 ];

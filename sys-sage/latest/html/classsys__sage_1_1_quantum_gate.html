@@ -98,15 +98,9 @@ Inheritance diagram for sys_sage::QuantumGate:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af75e157f6625c4fc8f51cb3bcfbe6788" id="r_af75e157f6625c4fc8f51cb3bcfbe6788"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af75e157f6625c4fc8f51cb3bcfbe6788">QuantumGate</a> ()</td></tr>
-<tr class="memdesc:af75e157f6625c4fc8f51cb3bcfbe6788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="classsys__sage_1_1_quantum_gate.html" title="Represents a quantum gate in a quantum circuit.">QuantumGate</a>.  <br /></td></tr>
-<tr class="separator:af75e157f6625c4fc8f51cb3bcfbe6788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd6a76e95379efcae9ed33d8b1de3df6" id="r_afd6a76e95379efcae9ed33d8b1de3df6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd6a76e95379efcae9ed33d8b1de3df6">QuantumGate</a> (size_t _gate_size)</td></tr>
-<tr class="memdesc:afd6a76e95379efcae9ed33d8b1de3df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes a quantum gate with a specified size.  <br /></td></tr>
-<tr class="separator:afd6a76e95379efcae9ed33d8b1de3df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cdc3b417a3fb2a2308be95bc6317586" id="r_a0cdc3b417a3fb2a2308be95bc6317586"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cdc3b417a3fb2a2308be95bc6317586">QuantumGate</a> (size_t _gate_size, std::string _name, double _fidelity, std::string _unitary)</td></tr>
-<tr class="memdesc:a0cdc3b417a3fb2a2308be95bc6317586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes a quantum gate with specific properties.  <br /></td></tr>
-<tr class="separator:a0cdc3b417a3fb2a2308be95bc6317586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd207b701409b3b53bde8bdeb9c890b2" id="r_acd207b701409b3b53bde8bdeb9c890b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd207b701409b3b53bde8bdeb9c890b2">QuantumGate</a> (size_t _gate_size=0, std::string _name=&quot;&quot;, double _fidelity=0.0, std::string _unitary=&quot;&quot;)</td></tr>
+<tr class="memdesc:acd207b701409b3b53bde8bdeb9c890b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes a quantum gate with specific properties.  <br /></td></tr>
+<tr class="separator:acd207b701409b3b53bde8bdeb9c890b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51c0226147604eba7e61f633b0929626" id="r_a51c0226147604eba7e61f633b0929626"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51c0226147604eba7e61f633b0929626">QuantumGate</a> (size_t _gate_size, const std::vector&lt; <a class="el" href="classsys__sage_1_1_qubit.html">Qubit</a> * &gt; &amp;_qubits)</td></tr>
 <tr class="memdesc:a51c0226147604eba7e61f633b0929626"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor that initializes a quantum gate with a list of qubits.  <br /></td></tr>
 <tr class="separator:a51c0226147604eba7e61f633b0929626"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,18 +128,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a905368a4d1b99069057b8624459e059a" id="r_a905368a4d1b99069057b8624459e059a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a905368a4d1b99069057b8624459e059a">GetFidelity</a> () const</td></tr>
 <tr class="memdesc:a905368a4d1b99069057b8624459e059a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the fidelity of the quantum gate.  <br /></td></tr>
 <tr class="separator:a905368a4d1b99069057b8624459e059a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4621cc58998fb6aab0ebf79a9b5299" id="r_ade4621cc58998fb6aab0ebf79a9b5299"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade4621cc58998fb6aab0ebf79a9b5299">SetFidelity</a> (double gateFidelity)</td></tr>
+<tr class="memdesc:ade4621cc58998fb6aab0ebf79a9b5299"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the fidelity of the quantum gate.  <br /></td></tr>
+<tr class="separator:ade4621cc58998fb6aab0ebf79a9b5299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa33eb8f46d1c68c0698b74275ede4831" id="r_aa33eb8f46d1c68c0698b74275ede4831"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa33eb8f46d1c68c0698b74275ede4831">GetGateSize</a> () const</td></tr>
 <tr class="memdesc:aa33eb8f46d1c68c0698b74275ede4831"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the quantum gate.  <br /></td></tr>
 <tr class="separator:aa33eb8f46d1c68c0698b74275ede4831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9f80c634b8ddc58e731d0bd01ae133e" id="r_ac9f80c634b8ddc58e731d0bd01ae133e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9f80c634b8ddc58e731d0bd01ae133e">SetGateSize</a> (size_t gateSize)</td></tr>
 <tr class="memdesc:ac9f80c634b8ddc58e731d0bd01ae133e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the size of the quantum gate.  <br /></td></tr>
 <tr class="separator:ac9f80c634b8ddc58e731d0bd01ae133e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596808c7791e59c5ec6d102766a9f2be" id="r_a596808c7791e59c5ec6d102766a9f2be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a596808c7791e59c5ec6d102766a9f2be">GetGateLength</a> () const</td></tr>
+<tr class="memdesc:a596808c7791e59c5ec6d102766a9f2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the length of the quantum gate.  <br /></td></tr>
+<tr class="separator:a596808c7791e59c5ec6d102766a9f2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a788b222f36cd19aec647bceeedabe1f7" id="r_a788b222f36cd19aec647bceeedabe1f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a788b222f36cd19aec647bceeedabe1f7">SetGateLength</a> (int GateLength)</td></tr>
 <tr class="memdesc:a788b222f36cd19aec647bceeedabe1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the length of the quantum gate operation (e.g., in time or circuit depth).  <br /></td></tr>
 <tr class="separator:a788b222f36cd19aec647bceeedabe1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab37c5c20cb5851abc146d15763482b7b" id="r_ab37c5c20cb5851abc146d15763482b7b"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab37c5c20cb5851abc146d15763482b7b">GetUnitary</a> () const</td></tr>
 <tr class="memdesc:ab37c5c20cb5851abc146d15763482b7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the unitary matrix of the quantum gate.  <br /></td></tr>
 <tr class="separator:ab37c5c20cb5851abc146d15763482b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5e9a05721b4003fdf7d9fb6ff2fb87" id="r_aff5e9a05721b4003fdf7d9fb6ff2fb87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff5e9a05721b4003fdf7d9fb6ff2fb87">SetUnitary</a> (const std::string &amp;gateUnitary)</td></tr>
+<tr class="memdesc:aff5e9a05721b4003fdf7d9fb6ff2fb87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the unitary matrix of the quantum gate.  <br /></td></tr>
+<tr class="separator:aff5e9a05721b4003fdf7d9fb6ff2fb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f7201dec0fd14982ee183c8bef740cf" id="r_a8f7201dec0fd14982ee183c8bef740cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f7201dec0fd14982ee183c8bef740cf">SetName</a> (std::string _name)</td></tr>
 <tr class="memdesc:a8f7201dec0fd14982ee183c8bef740cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the relationship.  <br /></td></tr>
 <tr class="separator:a8f7201dec0fd14982ee183c8bef740cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,9 +198,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e6ccb425ce8e0e03acb828096d7acb9 inherit pub_methods_classsys__sage_1_1_relation" id="r_a4e6ccb425ce8e0e03acb828096d7acb9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_relation.html#a4e6ccb425ce8e0e03acb828096d7acb9">Delete</a> ()</td></tr>
 <tr class="memdesc:a4e6ccb425ce8e0e03acb828096d7acb9 inherit pub_methods_classsys__sage_1_1_relation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual function to delete the relation.  <br /></td></tr>
 <tr class="separator:a4e6ccb425ce8e0e03acb828096d7acb9 inherit pub_methods_classsys__sage_1_1_relation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a455e31aba7c6c68b4fa35bd1492cc inherit pub_methods_classsys__sage_1_1_relation" id="r_a05a455e31aba7c6c68b4fa35bd1492cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_relation.html#a05a455e31aba7c6c68b4fa35bd1492cc">~Relation</a> ()=default</td></tr>
-<tr class="memdesc:a05a455e31aba7c6c68b4fa35bd1492cc inherit pub_methods_classsys__sage_1_1_relation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classsys__sage_1_1_relation.html" title="Abstract base class representing a multi-way connection among Components.">Relation</a> class.  <br /></td></tr>
-<tr class="separator:a05a455e31aba7c6c68b4fa35bd1492cc inherit pub_methods_classsys__sage_1_1_relation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7062c4bc5d0fda6122acf1012425acae inherit pub_methods_classsys__sage_1_1_relation" id="r_a7062c4bc5d0fda6122acf1012425acae"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys__sage_1_1_relation.html#a7062c4bc5d0fda6122acf1012425acae">~Relation</a> ()=default</td></tr>
+<tr class="memdesc:a7062c4bc5d0fda6122acf1012425acae inherit pub_methods_classsys__sage_1_1_relation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classsys__sage_1_1_relation.html" title="Abstract base class representing a multi-way connection among Components.">Relation</a> class.  <br /></td></tr>
+<tr class="separator:a7062c4bc5d0fda6122acf1012425acae inherit pub_methods_classsys__sage_1_1_relation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -223,8 +226,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ordered</b></td></tr>
 <div class="textblock"><p>Represents a quantum gate in a quantum circuit. </p>
 <p>This class extends the <a class="el" href="classsys__sage_1_1_relation.html" title="Abstract base class representing a multi-way connection among Components.">Relation</a> class to model quantum gates. It includes various properties specific to quantum gates, such as gate size, fidelity, and unitary matrix. The class also handles the coupling map and additional properties related to quantum gate operations. <a class="el" href="classsys__sage_1_1_quantum_gate.html" title="Represents a quantum gate in a quantum circuit.">QuantumGate</a> objects can represent both single- and multi-qubit gates, and are used to describe the logical operations that can be performed on a quantum backend. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af75e157f6625c4fc8f51cb3bcfbe6788" name="af75e157f6625c4fc8f51cb3bcfbe6788"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af75e157f6625c4fc8f51cb3bcfbe6788">&#9670;&#160;</a></span>QuantumGate() <span class="overload">[1/6]</span></h2>
+<a id="acd207b701409b3b53bde8bdeb9c890b2" name="acd207b701409b3b53bde8bdeb9c890b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd207b701409b3b53bde8bdeb9c890b2">&#9670;&#160;</a></span>QuantumGate() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,67 +235,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ordered</b></td></tr>
         <tr>
           <td class="memname">sys_sage::QuantumGate::QuantumGate </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Default constructor for <a class="el" href="classsys__sage_1_1_quantum_gate.html" title="Represents a quantum gate in a quantum circuit.">QuantumGate</a>. </p>
-<p>Initializes a quantum gate with default properties. </p>
-
-</div>
-</div>
-<a id="afd6a76e95379efcae9ed33d8b1de3df6" name="afd6a76e95379efcae9ed33d8b1de3df6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd6a76e95379efcae9ed33d8b1de3df6">&#9670;&#160;</a></span>QuantumGate() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sys_sage::QuantumGate::QuantumGate </td>
-          <td>(</td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_gate_size</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructor that initializes a quantum gate with a specified size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_gate_size</td><td>The number of qubits this gate operates on. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a0cdc3b417a3fb2a2308be95bc6317586" name="a0cdc3b417a3fb2a2308be95bc6317586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cdc3b417a3fb2a2308be95bc6317586">&#9670;&#160;</a></span>QuantumGate() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sys_sage::QuantumGate::QuantumGate </td>
-          <td>(</td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_gate_size</em>, </span></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>_gate_size</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>_name</em>, </span></td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>_name</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>_fidelity</em>, </span></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>_fidelity</em><span class="paramdefsep"> = </span><span class="paramdefval">0.0</span>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>_unitary</em></span>&#160;)</td>
+          <td class="paramtype">std::string</td>          <td class="paramname"><span class="paramname"><em>_unitary</em><span class="paramdefsep"> = </span><span class="paramdefval">&quot;&quot;</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -311,7 +269,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ordered</b></td></tr>
 </div>
 </div>
 <a id="a51c0226147604eba7e61f633b0929626" name="a51c0226147604eba7e61f633b0929626"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51c0226147604eba7e61f633b0929626">&#9670;&#160;</a></span>QuantumGate() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c0226147604eba7e61f633b0929626">&#9670;&#160;</a></span>QuantumGate() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,7 +299,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ordered</b></td></tr>
 </div>
 </div>
 <a id="a056cca530e5791ca306169294d529b7c" name="a056cca530e5791ca306169294d529b7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a056cca530e5791ca306169294d529b7c">&#9670;&#160;</a></span>QuantumGate() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a056cca530e5791ca306169294d529b7c">&#9670;&#160;</a></span>QuantumGate() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -389,7 +347,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ordered</b></td></tr>
 </div>
 </div>
 <a id="a49fb47ece2db75b290e1f7488e6c915f" name="a49fb47ece2db75b290e1f7488e6c915f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49fb47ece2db75b290e1f7488e6c915f">&#9670;&#160;</a></span>QuantumGate() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a49fb47ece2db75b290e1f7488e6c915f">&#9670;&#160;</a></span>QuantumGate() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -478,6 +436,26 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ordered</b></td></tr>
 
 <p>Gets the fidelity of the quantum gate. </p>
 <dl class="section return"><dt>Returns</dt><dd>The fidelity of the quantum gate. </dd></dl>
+
+</div>
+</div>
+<a id="a596808c7791e59c5ec6d102766a9f2be" name="a596808c7791e59c5ec6d102766a9f2be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a596808c7791e59c5ec6d102766a9f2be">&#9670;&#160;</a></span>GetGateLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sys_sage::QuantumGate::GetGateLength </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the length of the quantum gate. </p>
+<dl class="section return"><dt>Returns</dt><dd>The time duration or circuit depth of the quantum operation. </dd></dl>
 
 </div>
 </div>
@@ -608,6 +586,31 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ordered</b></td></tr>
 
 <p>Sets additional properties for the quantum gate. </p>
 <p>This function allows setting properties that are not part of the core quantum gate attributes. </p>
+
+</div>
+</div>
+<a id="ade4621cc58998fb6aab0ebf79a9b5299" name="ade4621cc58998fb6aab0ebf79a9b5299"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade4621cc58998fb6aab0ebf79a9b5299">&#9670;&#160;</a></span>SetFidelity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sys_sage::QuantumGate::SetFidelity </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>gateFidelity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the fidelity of the quantum gate. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">The</td><td>fidelity of the quantum gate. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -764,6 +767,31 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ordered</b></td></tr>
 
 <p>Sets the type of the quantum gate. </p>
 <p>Sets the specific type for quantum gates. </p>
+
+</div>
+</div>
+<a id="aff5e9a05721b4003fdf7d9fb6ff2fb87" name="aff5e9a05721b4003fdf7d9fb6ff2fb87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff5e9a05721b4003fdf7d9fb6ff2fb87">&#9670;&#160;</a></span>SetUnitary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sys_sage::QuantumGate::SetUnitary </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>gateUnitary</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the unitary matrix of the quantum gate. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gateUnitary</td><td>A string representing the unitary matrix of the quantum gate. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
