@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['addcomponent_0',['AddComponent',['../classsys__sage_1_1_relation.html#ab44c43c3133a78f6d37754d271c6a28e',1,'sys_sage::Relation']]],
-  ['addgate_1',['addGate',['../classsys__sage_1_1_quantum_backend.html#a2887ca2daff8c97ea0d82efc867dd928',1,'sys_sage::QuantumBackend']]]
+  ['_5fgetrelationsbytype_0',['_GetRelationsByType',['../classsys__sage_1_1_component.html#a2dfe4018dc461900c440eb93a83bea58',1,'sys_sage::Component']]]
 ];
